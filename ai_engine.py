@@ -1,12 +1,12 @@
 import os 
-from google import genai as googleai
+from google import genai as genai 
 from dotenv import load_dotenv
 
 #cargamos lo del archivo 
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 # ia configuracion API!!!
-client = googleai.Client(api_key=api_key)
+client = genai.Client(api_key=api_key)
 
 # async aprendi que es para que haga como multitasking y no bloquee toda la pagina
 
