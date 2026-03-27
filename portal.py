@@ -39,7 +39,7 @@ if st.session_state['logged_in']:
             with st.spinner("Empezando analisis..."):
                 try:
                     # 2. Llamada real a tu Backend (Uvicorn debe estar prendido)
-                    url_api = "sentinel-pro-ai-financial-advisor-znvg2wjtha6fd6a5mfuh7h.streamlit.app/analizar"
+                    url_api = "https://sentinel-pro-ai-financial-advisor.onrender.com/analizar"
                     params = {
                         "ventas": ventas_input,
                         "gastos": gastos_input,
