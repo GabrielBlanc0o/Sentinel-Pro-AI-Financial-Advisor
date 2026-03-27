@@ -3,7 +3,8 @@ import streamlit as st
 from database import supabase 
 import asyncio
 from auth_manager import encriptar_contra, verificar_contra
-
+import os
+api_key = st.secrets["GEMINI_API_KEY"]
 st.set_page_config(page_title="Sentinel Pro Portal", page_icon="🛡️")
 
 
@@ -38,7 +39,7 @@ if st.session_state['logged_in']:
             with st.spinner("Empezando analisis..."):
                 try:
                     # 2. Llamada real a tu Backend (Uvicorn debe estar prendido)
-                    url_api = "http://127.0.0.1:8000/analizar"
+                    url_api = "sentinel-pro-ai-financial-advisor-znvg2wjtha6fd6a5mfuh7h.streamlit.app/analizar"
                     params = {
                         "ventas": ventas_input,
                         "gastos": gastos_input,
