@@ -1,5 +1,5 @@
 import os 
-from google import genai as genai 
+import google.generativeai as genai 
 from dotenv import load_dotenv
 
 #cargamos lo del archivo 
