@@ -10,7 +10,6 @@ api_key = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
 
 async def obtener_consejo_ia(negocio: str, utilidad: float, margen: float):
-    # Inicializamos el modelo (usamos 1.5-flash que es el estándar estable)
     model = genai.GenerativeModel('gemini-3-flash')
     
     prompt_text = f"""
