@@ -1,0 +1,87 @@
+use mainpara el nombre del archivo  y app es la variable, 
+
+--reload es para que cada vez que guarde un cambio en el codigo ,
+ el server se reinicia solo
+
+"/" para leer pedir informacion
+"/analizar " para enviar datos delicados o pesados al server  usare get para q sean escondidos
+
+5:20 26/03/2026 FastAPI url funcionando pag automatica OK 
+agregue nombre_negocio tipo str
+
+google.generativeai para hablar con la api de google "servidores"
+
+ai_engine.py para la configuracion de los prompts
+
+listo verificacion y conexion de la api de google con el engine file que indica que modelo usar que use el env file y la funcion asincronica que tiene 3 paramentros negocio utilidad y margen
+y la genera tambien la respuesta de forma asincronica
+
+agregar el index.html al main.py
+
+
+primer fix de la antiguo paquete de la ia de google ahora se llama "genai"
+
+
+Todo OK entre el main.py y ai_engine.py
+
+
+7:33pm cree cuenta en supa base y cree una tabla en la base de datos
+
+instalar supabase   con pip
+
+agregue la api y url al env file para la conexion con supabase
+
+9:15 pm 
+
+alfin logre terminar el database.py para conectarlo con Supabase
+
+agrege logica en el main py para q las ventas siempre sean mayores a 0
+
+por ahora usamos static mensaje porq la api de google tiene limites 
+
+
+DIA 2 
+
+hoy 27 de marzo la plataforma solo calcula y almacena datos de forma segura
+atraves de FastAPI a Supabase , por ahora quite la api de google ya que
+se corta despues de 5 peticiones de prompt con los datos asincronicos que le 
+da la funcion , ahora crearemos un login seguro el cual estara compuesto de 2 archivos nuevos
+
+auth_engine.py . para encriptar contraseñas, NUNCA guardar las contraseñas solo el hash temporal
+
+y portal_web.py para la interfaz de usuario 
+
+y púes supabase ya tiene la lista de usuario para conectarla 
+
+PAQUETES Q use
+
+streamlit para no usar JavaScript
+passlib con bcrypt para las contraseñas
+jose para los tokens de cada usuario 
+
+tambien usuarios gratis y pro , el pro por ahora no lo hare con sistema de licencias
+si no por login  y tendra historial ilimitado y mejores consejos el resto si solo podra hace 3 analisis
+
+27/03/2026 11:20 pm cree la tabla de "usuarios" con los campos que usare para 
+verificar usuario correo id analisis restantes etc con rls activado 
+
+11:25 cree ek auth managare con bscryp para las password el encriptador
+
+cree la variable q use configurando CryptContext esquema de bcrypt y automatica
+dos funciones que encripte y verifique la primera usa la contraseña lalama la variable y con hash la encriptador
+luego la siguiente q verifica entre la plana  y la encriptada
+con .verify compara y ambas funciones con 
+
+11:30 voy a crear el portal web de login , para la base de datos de el 
+archivo de la base importa a supa junto al encriptador con verificacion de el
+y streamlit para la pagina, el codigo se lo pedi a gemini para el login sencillo
+
+decidi usar argon2 y no bcrypt porque neecesita dependencias en c y muy lento
+
+12:31 pm mejor usare streamlit con FastAPI
+
+12:48 pm
+
+agregue el dashboard conectado con el backend con fastapi para la conexion con la base de datos y verificacion de los usuarios
+
+lineas 28 a la 72
