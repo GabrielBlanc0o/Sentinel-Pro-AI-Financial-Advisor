@@ -4,7 +4,7 @@
 
 ## 🚀 Características
 - **Análisis Predictivo:** Basado en ingresos y gastos, genera diagnósticos de salud financiera.
-- **Motor de IA:** Integración con **Gemini 2.0 Flash** para consejos personalizados según el sector del negocio.
+- **Motor de IA:** Integración con **Gemini 3.0 Flash** para consejos personalizados según el sector del negocio.
 - **Seguridad:** Autenticación robusta con hashing de contraseñas y gestión de sesiones.
 - **Persistencia en la Nube:** Historial de análisis almacenado en **Supabase (PostgreSQL)**.
 
