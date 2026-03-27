@@ -47,7 +47,7 @@ if st.session_state['logged_in']:
                         "nombre_usuario": st.session_state['user_name']  # <--- AGREGA ESTA LÍNEA
                     }
 
-                    response = requests.post(url_api, params=params)                   
+                    response = requests.post(url_api, json=params)                   
                     if response.status_code == 200:
                         res = response.json()
                         st.balloons() # ¡Efecto de éxito!
