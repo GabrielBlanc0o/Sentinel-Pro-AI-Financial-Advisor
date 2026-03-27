@@ -9,7 +9,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], # Permite que cualquier web se conecte (solo para desarrollo)
     allow_methods=["*"],
-    allow_headers=["*"],
+    allow_credentials=True,
+    allow_headers=["*"]
 )
 # endpoint primero 
 @app.get("/")
