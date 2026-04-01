@@ -19,11 +19,9 @@ if st.session_state['logged_in']:
         st.session_state['logged_in'] = False
         st.rerun()
 
-    st.title("📊 Dashboard Sentinel Pro")
+    st.title(" Dashboard Sentinel Pro")
     st.info(f"Has iniciado sesión como: {st.session_state['user_email']}")
     
-
-    st.write("---")
     st.subheader("Nuevo Análisis Financiero")
     
     # para los datos que pide tu FastAPI
